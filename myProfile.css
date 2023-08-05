@@ -1,0 +1,38 @@
+body,h1{
+    margin:0;
+    padding-bottom:1.5rem;
+}
+img{
+    border:solid black 5px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.headers{
+    text-align:center;
+    background-color: rgb(40, 38, 38);
+    color:white;
+    padding:2rem 0rem;
+}
+
+#github
+{
+    color:rgb(131, 17, 131);
+}
+#linkedin{
+    color:rgb(36, 36, 150);
+}
+#insta
+{
+    color:blueviolet;
+}
+a{
+    padding-top:2rem;
+    margin:auto 20px;
+    display:inline-block;
+}
+
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
