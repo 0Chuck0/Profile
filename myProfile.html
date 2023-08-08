@@ -8,17 +8,107 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-    <div class="headers">
-        <script src="myProfile.js"></script>
-        <h1>Hi there! I'm Saumya Shah</h1>
-        <img id="profPic" src="./Saumya_Pic_project.jpg" alt="Profile Pic" width="20%">
-        
-            <a href="https://github.com/0Chuck0" target="_blank"><i id="github" style="font-size:3rem" class="fa">&#xf09b;</i></a>
-            <a href="https://www.linkedin.com/in/saumya-shah-923825247" target="_blank"><i id="linkedin" style="font-size:3rem" class="fa">&#xf08c;</i></a>
-            <a href="https://instagram.com/saumya.shah151?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i id="insta" style="font-size:3rem" class="fa">&#xf16d;</i></a>
+        <header class="header">
+            <nav class="default-nav">
+              <section>
+                <a href="#aboutMe">About Me</a><a href="#education">Education</a><a href="#hobbies">Hobbies</a><a href="#tech_interests">Technologies and Interests</a><a href="#contactMe">Contact</a>
+              </section>
+            </nav>
+        </header>
+    <main>
 
-            <h2>I am <span id="dynamic-text"></span></h2>
-           
-        </div> 
+        <section class="headers">
+            <script src="myProfile.js"></script>
+            <h1>Hi there! I'm Saumya Shah</h1>
+            <img id="profPic" src="./Saumya_Pic_project.jpg" alt="Profile Pic" width="20%">
+            
+                <a href="https://github.com/0Chuck0" target="_blank"><i id="github" style="font-size:3rem" class="fa">&#xf09b;</i></a>
+                <a href="https://www.linkedin.com/in/saumya-shah-923825247" target="_blank"><i id="linkedin" style="font-size:3rem" class="fa">&#xf08c;</i></a>
+                <a href="https://instagram.com/saumya.shah151?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i id="insta" style="font-size:3rem" class="fa">&#xf16d;</i></a>
+
+                <h2>I am <span id="dynamic-text"></span></h2>
+            </section>
+
+            <section class="aboutMe" id="aboutMe">
+                <h2>About Me</h2>
+                <p>
+                    Hello there! I'm Saumya, and I'm currently immersed in the world of B.Tech ICT studies at DAIICT. 
+                    Learning isn't just a task for me; it's a thrilling adventure that I enthusiastically embark upon. 
+                    Beyond the academic sphere, I'm an active participant in our vibrant business club. Here, 
+                    I have the opportunity to bridge the gap between theoretical knowledge and its practical applications, 
+                    enhancing my skills in a real-world context.
+
+                </p>
+                <p>
+                    But there's more to me than just academics.
+                    I'm also a fervent sports lover. As a committed member of our college cricket team,
+                     I find joy in embracing teamwork, discipline, and the exhilaration of the game. 
+                     This platform is a digital window into my journey—a journey marked by the convergence of education, 
+                     leadership experiences, and the love for sports. So, join me as I navigate this multifaceted adventure, 
+                     where every step reflects my dedication to holistic growth and the pursuit of excellence in every aspect of life.
+                </p>
+            </section>
+
+            <section class="education" id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>DAIICT - B.Tech in ICT</li>
+                    <li>Sheth CN Vidyavihar - GHSEB</li>
+                    <li>Sheth CN Vidyavihar - GSEB</li>
+                </ul>
+            </section>
+            <section class="hobbies" id="hobbies">
+                <h2>Hobbies</h2>
+                <ol>
+                    <li>Music</li>
+                    <li>Singing</li>
+                    <li>Photography</li>
+                    <li>Playing and learning any sports</li>
+                </ol>
+            </section>
+            <section class="tech_interests"  id="tech_interests">
+                <h2>Technology and Interests</h2>
+                <label for="tableInterests"><h3>Planning to learn</h3></label>
+                <table class="tableInterests" id="tableInterests">
+                    <tr>
+                        <th>FrontEnd</th>
+                        <th>Backend</th>
+                        <th>Database</th>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>NodeJS</td>
+                        <td>MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>ReactJS</td>
+                        <td>asp.NET</td>
+                        <td>MongoDB</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="contactMe" id="contactMe">
+                <form name=" contact" id="contact" method="post">
+                <section class="fullForm" id="fullForm">
+                    <h3>Contact Me</h3>
+                    <section>
+                    <label for="fName">First Name: </label>
+                    <input id="fName" type="text" placeholder="eg. Saumya">
+                </section>
+                <section>
+
+                    <label for="lName">Last Name: </label>
+                    <input id="lName" type="text" placeholder="eg. Shah">
+                </section>
+                <section>
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="10" cols="30" placeholder="Feel free to write anything..."></textarea>
+                </section>
+                    <button type="submit">Send</button>
+                </section>
+                </form>
+            </section>
+    </main> 
     </body>
 </html>
