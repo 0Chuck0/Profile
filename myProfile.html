@@ -1,114 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="myProfile.css">
-        <meta charset="UTF-8">
-        <title>Saumya Shah's Profile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header class="header">
-            <nav class="default-nav">
-              <section>
-                <a href="#aboutMe">About Me</a><a href="#education">Education</a><a href="#hobbies">Hobbies</a><a href="#tech_interests">Technologies and Interests</a><a href="#contactMe">Contact</a>
-              </section>
-            </nav>
-        </header>
-    <main>
 
-        <section class="headers">
-            <script src="myProfile.js"></script>
-            <h1>Hi there! I'm Saumya Shah</h1>
-            <img id="profPic" src="./Saumya_Pic_project.jpg" alt="Profile Pic" width="20%">
-            
-                <a href="https://github.com/0Chuck0" target="_blank"><i id="github" style="font-size:3rem" class="fa">&#xf09b;</i></a>
-                <a href="https://www.linkedin.com/in/saumya-shah-923825247" target="_blank"><i id="linkedin" style="font-size:3rem" class="fa">&#xf08c;</i></a>
-                <a href="https://instagram.com/saumya.shah151?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i id="insta" style="font-size:3rem" class="fa">&#xf16d;</i></a>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saumya's Portfolio</title>
+    <link rel="stylesheet" href="myProfile_styles.css" />
+</head>
 
-                <h2>I am <span id="dynamic-text"></span></h2>
-            </section>
+<body>
+    <section class="menu">
+        <button id="close-menu">&times;</button>
+        <nav>
+          <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#qualifications">Qualifications</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    <header>
+        
+        <nav class = "default-nav">
+            <a href="#about-me">About Me</a>
+            <a href="#qualifications">Qualifications</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#technologies">Technologies and Interests</a>
+            <a href="#contact-me">Contact</a>
+        </nav>
+        <nav class = "responsive-nav">
+            <button id="menu-button">Menu</button>
+        </nav>
+    </header>
 
-            <section class="aboutMe" id="aboutMe">
-                <h2>About Me</h2>
-                <p>
-                    Hello there! I'm Saumya, and I'm currently immersed in the world of B.Tech ICT studies at DAIICT. 
-                    Learning isn't just a task for me; it's a thrilling adventure that I enthusiastically embark upon. 
-                    Beyond the academic sphere, I'm an active participant in our vibrant business club. Here, 
-                    I have the opportunity to bridge the gap between theoretical knowledge and its practical applications, 
-                    enhancing my skills in a real-world context.
+    <main class="container">
+        <article class="intro">
+            <img id="profile-image" src="Saumya_Pic_project.jpg" alt="Profile image - Saumya" />
+            <h1>Hi, I'm Saumya</h1>
 
-                </p>
-                <p>
-                    But there's more to me than just academics.
-                    I'm also a fervent sports lover. As a committed member of our college cricket team,
-                     I find joy in embracing teamwork, discipline, and the exhilaration of the game. 
-                     This platform is a digital window into my journey—a journey marked by the convergence of education, 
-                     leadership experiences, and the love for sports. So, join me as I navigate this multifaceted adventure, 
-                     where every step reflects my dedication to holistic growth and the pursuit of excellence in every aspect of life.
-                </p>
-            </section>
+            <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
 
-            <section class="education" id="education">
-                <h2>Education</h2>
-                <ul>
-                    <li>DAIICT - B.Tech in ICT</li>
-                    <li>Sheth CN Vidyavihar - GHSEB</li>
-                    <li>Sheth CN Vidyavihar - GSEB</li>
-                </ul>
-            </section>
-            <section class="hobbies" id="hobbies">
-                <h2>Hobbies</h2>
-                <ol>
-                    <li>Music</li>
-                    <li>Singing</li>
-                    <li>Photography</li>
-                    <li>Playing and learning any sports</li>
-                </ol>
-            </section>
-            <section class="tech_interests"  id="tech_interests">
-                <h2>Technology and Interests</h2>
-                <label for="tableInterests"><h3>Planning to learn</h3></label>
-                <table class="tableInterests" id="tableInterests">
-                    <tr>
-                        <th>FrontEnd</th>
-                        <th>Backend</th>
-                        <th>Database</th>
-                    </tr>
-                    <tr>
-                        <td>Bootstrap</td>
-                        <td>NodeJS</td>
-                        <td>MySQL</td>
-                    </tr>
-                    <tr>
-                        <td>ReactJS</td>
-                        <td>asp.NET</td>
-                        <td>MongoDB</td>
-                    </tr>
-                </table>
-            </section>
+            <p class="social-links">
+                <a i href="https://github.com/0Chuck0" target="_blank">
+                    <img d="Github-logo" width="30" height="30" src="Github_logo.png"
+                        alt="Github logo" />
+                </a>
+                <a href="https://www.linkedin.com/in/saumya-shah-923825247" target="_blank">
+                    <img id="linkedIn-logo" width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png"
+                        alt="Linked In logo" /> </a><a href="https://www.instagram.com/saumya.shah_151/"
+                    target="_blank">
+                    <img width="30" height="30"
+                        src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
+                        alt="Instagram Logo" />
+                </a>
+            </p>
+        </article>
 
-            <section class="contactMe" id="contactMe">
-                <form name=" contact" id="contact" method="post">
-                <section class="fullForm" id="fullForm">
-                    <h3>Contact Me</h3>
-                    <section>
-                    <label for="fName">First Name: </label>
-                    <input id="fName" type="text" placeholder="eg. Saumya">
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello there! I'm Saumya, and I'm currently immersed in the world of B.Tech ICT studies at DAIICT.
+                Learning isn't just a task for me; it's a thrilling adventure that I enthusiastically embark upon.
+                Beyond the academic sphere, I'm an active participant in our vibrant business club. Here,
+                I have the opportunity to bridge the gap between theoretical knowledge and its practical applications,
+                enhancing my skills in a real-world context.
+
+            </p>
+            <p>
+                But there's more to me than just academics.
+                I'm also a fervent sports lover. As a committed member of our college cricket team,
+                I find joy in embracing teamwork, discipline, and the exhilaration of the game.
+                This platform is a digital window into my journey—a journey marked by the convergence of education,
+                leadership experiences, and the love for sports. So, join me as I navigate this multifaceted adventure,
+                where every step reflects my dedication to holistic growth and the pursuit of excellence in every aspect
+                of life.
+            </p>
+        </section>
+
+        <section id="qualifications">
+            <h2>Qualifications</h2>
+            <ol>
+                <li>DAIICT - B.Tech in ICT</li>
+                <li>Sheth CN Vidyavihar - GHSEB</li>
+                <li>Sheth CN Vidyavihar - GSEB</li>
+            </ol>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Music</li>
+                <li>Singing</li>
+                <li>Photography</li>
+                <li>Playing and learning any sports</li>
+            </ul>
+        </section>
+        <section id="technologies">
+            <h2>Technologies and Interests</h2>
+            <table>
+                <tr>
+                    <th>Frontend</th>
+                    <th>Backend</th>
+                    <th>Database</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>NodeJS</td>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Rails</td>
+                    <td>Mongo DB</td>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td>Asp.NET</td>
+                    <td>Postgres</td>
+                </tr>
+            </table>
+        </section>
+        </section>
+
+
+        <section id="contact-me">
+            <form name="contact" id="contact" method="POST" data-netlify="true">
+                <h1>Contact Me</h1>
+                <section>
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" id="firstName" required />
                 </section>
                 <section>
-
-                    <label for="lName">Last Name: </label>
-                    <input id="lName" type="text" placeholder="eg. Shah">
+                    <label for="lastName">Last name</label>
+                    <input type="text" name="lastName" id="lastName" required />
                 </section>
                 <section>
-                    <label for="message">Message:</label>
-                    <textarea id="message" rows="10" cols="30" placeholder="Feel free to write anything..."></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"> </textarea>
                 </section>
-                    <button type="submit">Send</button>
-                </section>
-                </form>
-            </section>
-    </main> 
-    </body>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Made by Saumya Shah ©2023
+    </footer>
+    <script src="myProfile_updated.js"></script>
+    <script src="myProfile_menu.js"></script>
+</body>
+
 </html>
