@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     document.getElementById("menu-button").addEventListener("click",showmenu);
     document.getElementById("close-menu").addEventListener("click",closemenu);
+    document.getElementById("home-button").addEventListener("click",closemenu);
     function showmenu()
     {
         const menu = document.querySelector("section.menu");
