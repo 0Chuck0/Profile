@@ -10,33 +10,36 @@
 </head>
 
 <body>
-    <section class="menu">
+    <section>
+        <a href="#menu"><button id="home-button"><img src="https://www.iconpacks.net/icons/2/free-home-icon-2503.png"></button></a> 
+    </section>
+    <section class="menu" id="menu">
         <button id="close-menu">&times;</button>
-        <nav>
-          <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#qualifications">Qualifications</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#contact-me">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                </ul>
+            </nav>
+    </section>
     <header>
-        
-        <nav class = "default-nav">
+
+        <nav class="default-nav">
             <a href="#about-me">About Me</a>
             <a href="#qualifications">Qualifications</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#technologies">Technologies and Interests</a>
             <a href="#contact-me">Contact</a>
         </nav>
-        <nav class = "responsive-nav">
+        <nav class="responsive-nav">
             <button id="menu-button">Menu</button>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="container">
         <article class="intro">
             <img id="profile-image" src="Saumya_Pic_project.jpg" alt="Profile image - Saumya" />
             <h1>Hi, I'm Saumya</h1>
@@ -44,14 +47,13 @@
             <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
 
             <p class="social-links">
-                <a i href="https://github.com/0Chuck0" target="_blank">
-                    <img d="Github-logo" width="30" height="30" src="Github_logo.png"
-                        alt="Github logo" />
+                <a href="https://github.com/0Chuck0" target="_blank">
+                    <img d="Github-logo" width="30" height="30" src="Github_logo.png" alt="Github logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/saumya-shah-923825247" target="_blank">
-                    <img id="linkedIn-logo" width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png"
-                        alt="Linked In logo" /> </a><a href="https://www.instagram.com/saumya.shah_151/"
-                    target="_blank">
+                    <img id="linkedIn-logo" width="30" height="30"
+                        src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png" alt="Linked In logo" />
+                </a><a href="https://www.instagram.com/saumya.shah_151/" target="_blank">
                     <img width="30" height="30"
                         src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
                         alt="Instagram Logo" />
@@ -148,7 +150,7 @@
     <footer>
         Made by Saumya Shah ©2023
     </footer>
-    <script src="myProfile.js"></script>
+    <script src="myProfile_updated.js"></script>
     <script src="myProfile_menu.js"></script>
 </body>
 
