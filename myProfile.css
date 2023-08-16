@@ -1,201 +1,257 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  header {
-    padding: 16px;
-    position: sticky;
-    top: 0;
-    border: 1px solid white;
-    background: hsl(0, 0%, 100%);
-    border-bottom: 2px solid;
-  }
-  a{
-    text-decoration: none;
-  }
-  header nav > a {
-    margin-right: 16px;
- 
-  }
+  box-sizing: border-box;
+}
 
-  header #menu-button{
-    display: none;
-    z-index: 1;
-  }
+:root {
+  --background-color: rgb(231, 210, 167);
+  --background-color-header: rgb(159, 243, 222);
+  --text-color-header: black;
+}
 
-  header nav > a:hover {
-    background-color: rgba(158, 218, 255, 0.4) ;
-    border: 1px dashed black;
-    border-radius: 5px;
-    
-  }
-  h1{
-    font-size: 2rem;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  footer {
-    padding: 16px;
-    text-align: center;
-    border-top: 4px solid;
-  }
-  .container {
-    padding: 16px;
-  }
-  
-  .container > section > h2 {
-    text-align: center;
-  }
-  
-  .intro {
-    margin: -16px;
-    padding: 16px;
-    background-color: #1d1c1c;
-    color: white;
-    text-align: center;
-  }
-  
-  #profile-image {
-    width:35%;
-    border-radius: 15px;
-  }
-  
-  .social-links img {
-    height: 40px;
-    width: 40px;
-  }
-  
-  .social-links img:hover {
-    padding: 3px;
-    border:2px solid white;
-    border-radius: 16px;
-  }
-  .social-links a {
-    text-decoration: none;
-    margin: auto 16px;
-  }
-  
-  table,
-  tr,
-  td,
-  th {
-    border: 1px solid;
-    border-collapse:collapse;
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  th,
-  td{
-    padding: 8px;
-  }
-  
-  p {
-    font-size: 1.5rem;
-  }
-  
-  .dynamic-text-color {
-    color: royalblue;
-  }
-  
-  form#contact {
-    max-width: 400px;
-    margin: auto;
-    padding: 16px;
-    border: 1px solid;
-    border-radius: 16px;
-  }
-  
-  #contact label {
-    display: block;
-    font-weight: 600;
-  }
-  #contact input,
-  #contact textarea,
-  #contact button {
-    width: 100%;
-    font-size: 1.2rem;
-    padding: 8px;
-  }
-  #contact-me {
-    margin-top: 16px;
-  }
+header {
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  border: 1px solid white;
+  background-color: var(--background-color-header);
+  border-bottom: 2px solid;
+}
 
-  .menu,#menu-button{
-    display:none;
-  }
+a {
+  text-decoration: none;
+}
 
-  /*Responsive Design*/
+header nav>a {
+  margin-right: 16px;
+
+}
+
+header #menu-button ,#home-button{
+  display: none;
+  z-index: 1;
+}
+
+header nav>a:hover {
+  background-color: rgba(158, 218, 255, 0.4);
+  border: 1px dashed black;
+  border-radius: 5px;
+
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  border-top: 4px solid;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container>section>h2 {
+  text-align: center;
+}
+
+.intro {
+  margin: -16px;
+  padding: 16px;
+  background-color: var(--background-color);
+  color: var(--text-color-header);
+  text-align: center;
+}
+
+#profile-image {
+  width: 35%;
+  border-radius: 15px;
+}
+
+.social-links img {
+  height: 40px;
+  width: 40px;
+}
+
+.social-links img:hover {
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 16px;
+}
+
+.social-links a {
+  text-decoration: none;
+  margin: auto 16px;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.dynamic-text-color {
+  color: royalblue;
+}
+
+form#contact {
+  max-width: 400px;
+  margin: auto;
+  padding: 16px;
+  border: 1px solid;
+  border-radius: 16px;
+}
+
+#contact label {
+  display: block;
+  font-weight: 600;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+#contact-me {
+  margin-top: 16px;
+}
+
+.menu,
+#menu-button {
+  display: none;
+}
+
+/*Responsive Design*/
 
 @media (width<580px) {
 
-  header #menu-button
-  {
+  header #menu-button {
     display: block;
-    margin-left:auto;
+    margin-left: auto;
     background-color: transparent;
     border: 2px solid purple;
     border-radius: 6px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
   }
-  .menu #close-menu{
+
+  #home-button{
+    display:inline-block;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px ;
+    z-index: 5;
+  }
+  #home-button img{
+    height: 22px;
+    width: 22px;
+    padding-top: 1px;
+    z-index: inherit;
+  }
+  .menu #close-menu {
     position: absolute;
-    top:8px;
-    right:8px;
-    border:none;
+    top: 8px;
+    right: 8px;
+    border: none;
     font-size: x-large;
     color: rgb(106, 26, 2);
-  } 
-  .menu{
+  }
+
+  .menu {
     display: revert;
-    height:0;
-    width:100%;
+    height: 0;
+    width: 100%;
     position: absolute;
     overflow: hidden;
-    top:0;
-    z-index:1;
+    top: 0;
+    z-index: 1;
     background-color: wheat;
-    transition:height 0.5s ease-in-out;;
+    transition: height 0.5s ease-in-out;
+    ;
   }
-  .menu nav{
-    margin-top:32px;
+
+  .menu nav {
+    margin-top: 32px;
   }
-  .menu nav > ul{
-    padding-left:0;
+
+  .menu nav>ul {
+    padding-left: 0;
   }
-  #close-menu{
+
+  #close-menu {
     display: block;
-    margin-left:auto;
+    margin-left: auto;
     background-color: transparent;
-    font-size:large;
+    font-size: large;
     font-weight: bold;
   }
-  .menu  li{
-    list-style:none;
+
+  .menu li {
+    list-style: none;
     margin-bottom: 16px;
     font-size: large;
     text-align: center;
-    
+
   }
-  header .default-nav{
+
+  header .default-nav {
     display: none;
   }
-  
-  #profile-image{
-    width:60%;
+
+  #profile-image {
+    width: 60%;
   }
 
   .social-links img {
     height: 30px;
     width: 30px;
   }
-  
+
 }
 
+#profile-image:hover {
+  animation: rotation 0.2s 2 alternate ease-in;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media(prefers-color-scheme:dark) {
+  body {
+    --background-color: rgb(43, 41, 38);
+    --background-color-header: rgb(197, 215, 219);
+    --text-color-header: rgb(255, 255, 255);
+  }
+}
